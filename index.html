@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <!-- ICON CDN -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'/>
+    <!-- 自己的CSS -->
+    <link rel="stylesheet" href="CSS/all.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">TODO LIST</h1>
+        <div class="input">
+            <input class="input_list" type="text" placeholder="新增待辦事項"><input class="btn btn_add" type="submit" value="+">
+        </div>
+    
+        <div class="lists">
+            <div class="filter">
+                <input class="btn btn_all cursor" type="button" value="全部"><input class="btn btn_unfinished" type="button"
+                    value="待完成"><input class="btn btn_finished" type="button" value="已完成">
+            </div>
+    
+            <ul class="todoList">
+    
+            </ul>
+            <div class="footer">
+                <label class="unfinished_num">0個待完成項目</label>
+                <input class="clearDone_btn" type="button" value="清除已完成項目">
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- 自己的JS -->
+    <script src="all.js"></script>
+</body>
+</html>

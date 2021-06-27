@@ -1,0 +1,176 @@
+body {
+    font-family: "BalooTamma2", "NotoSansCJKtc", sans-serif;
+    background-image: linear-gradient(174deg, $yellow 2%, $yellow 46%, #ffffff 46%, #ffffff 100%, #e8e8e8 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: $black;
+}
+
+h1 {
+    font-size: 32px;
+    width: 34.7%;
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 82px;
+    margin: 0 auto;
+}
+
+.input {
+    max-width: 500px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 4px;
+
+    .input_list {
+        padding: 10px 0;
+        margin-left: 20px;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+    }
+    .btn_add {
+        display: block;
+        padding: 10px;
+        border: none;
+        color: #fff;
+        background: $black;
+        font-size: 32px;
+        line-height: 20px;
+        border-radius: 10px;
+    }
+}
+
+.lists {
+    max-width: 500px;
+    padding-bottom: 16px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #bebebb;
+    .filter {
+        margin-bottom: 10px;
+        .cursor {
+            color: $black;
+            font-weight: bold;
+            border-bottom: 2px solid $black;
+        }
+        input {
+            background: none;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid #efefef;
+            color: $gray;
+            font-size: 14px;
+            padding: 16px 0;
+            width: 33.33%;
+        }
+    }
+}
+
+.todoList {
+    margin: 0 auto;
+    width: 90%;
+    li {
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        overflow: hidden;
+        label {
+            overflow: hidden;
+            transition: 1s;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            line-height: 24px;
+            margin-bottom: -6px;
+            p {
+                display: inline-block;
+                padding-left: 10px;
+                width: 92%;
+                border-bottom: 1px solid $gray;
+            }
+        }
+        &:hover {
+            .delete {
+                color: $black;
+            }
+        }
+    }
+    .checkBox {
+        cursor: pointer;
+        margin: 0;
+        width: 20px;
+        border-radius: 5px;
+        & + span {
+            display: none;
+        }
+        &:checked {
+            display: none;
+            & + span {
+                display: inline-block;
+                text-align: center;
+                width: 20px;
+                height: 20px;
+                color: $yellow;
+                font-size: 16px;
+            }
+            & + span + p {
+                text-decoration: line-through;
+                color: $gray;
+            }
+        }
+    }
+    .delete {
+        color: #fff;
+        cursor: pointer;
+        margin: 0;
+        margin-left: 15px;
+        margin-bottom: -6px;
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        background: none;
+        outline: none;
+        border: none;
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}
+.footer {
+    width: 90%;
+    padding-top: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    .unfinished_num {
+        display: block;
+        margin-bottom: -6px;
+    }
+    .clearDone_btn {
+        background: none;
+        outline: none;
+        border: none;
+        color: $gray;
+        font-size: 14px;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+            background: $yellow;
+        }
+    }
+}
+
+.btn {
+    cursor: pointer;
+}
